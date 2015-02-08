@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -7,13 +7,46 @@
   <meta name="description" content="" />
   <meta name="author" content="Nicolle Whitman; Brian Anger" />
 
-  <title>Nicolle and Brian: October 24, 2015</title>
-  
+  <title>Nicolle and Brian - October 24, 2015</title>
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-  <style>body { padding-top: 70px; }</style>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Calligraffitti" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      color: white;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Calligraffitti', cursive;
+      font-size: 45px;
+    }
+
+    p {
+      font-size: large;
+    }
+
+    .content {
+      padding-top: 70px;
+      min-height: 100vh;
+      border-bottom: 2px solid coral;
+    }
+
+    .contentSection {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .transparentBox {
+      background-color: #4AC4B7;
+      opacity: 0.9;
+    }
+  </style>
 </head>
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+<body style="background-color: #4AC4B7">
+  <nav class="navbar navbar-default navbar-fixed-top" style="font-size: larger;">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -22,11 +55,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Nicolle and Brian</a>
+        <a class="navbar-brand hidden-sm" href="#" style="font-weight: bold;">Nicolle and Brian &nbsp; 10/24/2015</a>
       </div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">About Us</a></li>
+          <li><a href="#">About Us</a></li>
           <li><a href="#wedding">Our Wedding</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#travel">Getting There</a></li>
@@ -36,12 +69,118 @@
       </div>
     </div>
   </nav>
-  
-  <div class="container">
-    <p>Our website is coming soon!</p>
+
+  <div class="contentSection" style="background-image: url('Images/SantaBarbara.jpg');">
+    <div class="transparentBox">
+      <div class="container content">
+        <p>Our website is coming soon!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentSection" style="background-image: url('Images/Cruising.jpg');">
+    <div class="transparentBox">
+      <div class="container content" id="wedding">
+        <h1>Our Wedding</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi lorem, laoreet vel mattis vel, condimentum vel turpis. In auctor varius tortor ut varius. Sed in risus ut diam suscipit elementum. Sed vehicula sodales dui, id consequat dui fringilla eget. Nullam vel pulvinar erat. In dignissim bibendum lacus, et convallis lacus rutrum in. Morbi faucibus a est vel posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel felis tristique, tristique orci eget, ornare massa.</p>
+        <p>Ut hendrerit elit in erat mollis commodo. Vestibulum eu metus semper felis egestas elementum eget vel metus. Nulla lobortis, turpis ac cursus finibus, leo justo laoreet ipsum, ut consectetur dui diam et arcu. Ut id lacinia elit. Phasellus quis mauris mauris. Ut et blandit mauris, vel mattis tellus. Ut convallis et nisl et porttitor. Nam eu lacinia sem. Praesent faucibus, massa sed fringilla volutpat, nisl metus commodo arcu, vestibulum molestie felis nulla id felis. Maecenas et nisi lectus. Cras at iaculis tellus, at euismod lacus. Pellentesque congue vehicula metus eu tincidunt. Curabitur quis enim varius, vestibulum massa ac, faucibus turpis. Morbi dictum dui ante, at vestibulum nibh pretium ac. Nulla vitae arcu est. Proin sit amet sem vitae lorem fermentum sagittis ornare vel sem.</p>
+        <p>Integer at felis nisi. Nunc tincidunt sapien vitae tortor elementum consequat. Ut sit amet lectus enim. Donec malesuada velit non augue sodales, quis scelerisque mi euismod. Proin a purus id erat lacinia cursus. Aliquam gravida velit leo, eu molestie arcu blandit quis. Pellentesque consectetur nunc urna, id maximus metus iaculis eget. Nulla tincidunt dapibus purus vestibulum gravida. Donec sit amet nunc magna. Aenean et ex vitae augue hendrerit auctor ut tristique purus. Etiam ornare, leo vel condimentum vestibulum, mi lacus iaculis dolor, sed congue massa turpis gravida dui. Pellentesque sodales interdum neque, eu tincidunt sapien pulvinar a.</p>
+        <button type="button" class="btn btn-default" style="margin-top: 20px;" data-toggle="modal" data-target="#rsvpModal">RSVP</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentSection" style="background-image: url('Images/SanDiego.jpg');">
+    <div class="transparentBox">
+      <div class="container content" id="events">
+        <h1>Events</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi lorem, laoreet vel mattis vel, condimentum vel turpis. In auctor varius tortor ut varius. Sed in risus ut diam suscipit elementum. Sed vehicula sodales dui, id consequat dui fringilla eget. Nullam vel pulvinar erat. In dignissim bibendum lacus, et convallis lacus rutrum in. Morbi faucibus a est vel posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel felis tristique, tristique orci eget, ornare massa.</p>
+        <p>Ut hendrerit elit in erat mollis commodo. Vestibulum eu metus semper felis egestas elementum eget vel metus. Nulla lobortis, turpis ac cursus finibus, leo justo laoreet ipsum, ut consectetur dui diam et arcu. Ut id lacinia elit. Phasellus quis mauris mauris. Ut et blandit mauris, vel mattis tellus. Ut convallis et nisl et porttitor. Nam eu lacinia sem. Praesent faucibus, massa sed fringilla volutpat, nisl metus commodo arcu, vestibulum molestie felis nulla id felis. Maecenas et nisi lectus. Cras at iaculis tellus, at euismod lacus. Pellentesque congue vehicula metus eu tincidunt. Curabitur quis enim varius, vestibulum massa ac, faucibus turpis. Morbi dictum dui ante, at vestibulum nibh pretium ac. Nulla vitae arcu est. Proin sit amet sem vitae lorem fermentum sagittis ornare vel sem.</p>
+        <p>Integer at felis nisi. Nunc tincidunt sapien vitae tortor elementum consequat. Ut sit amet lectus enim. Donec malesuada velit non augue sodales, quis scelerisque mi euismod. Proin a purus id erat lacinia cursus. Aliquam gravida velit leo, eu molestie arcu blandit quis. Pellentesque consectetur nunc urna, id maximus metus iaculis eget. Nulla tincidunt dapibus purus vestibulum gravida. Donec sit amet nunc magna. Aenean et ex vitae augue hendrerit auctor ut tristique purus. Etiam ornare, leo vel condimentum vestibulum, mi lacus iaculis dolor, sed congue massa turpis gravida dui. Pellentesque sodales interdum neque, eu tincidunt sapien pulvinar a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentSection" style="background-image: url('Images/SantaBarbara.jpg');">
+    <div class="transparentBox">
+      <div class="container content" id="travel">
+        <h1>Getting There</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi lorem, laoreet vel mattis vel, condimentum vel turpis. In auctor varius tortor ut varius. Sed in risus ut diam suscipit elementum. Sed vehicula sodales dui, id consequat dui fringilla eget. Nullam vel pulvinar erat. In dignissim bibendum lacus, et convallis lacus rutrum in. Morbi faucibus a est vel posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel felis tristique, tristique orci eget, ornare massa.</p>
+        <p>Ut hendrerit elit in erat mollis commodo. Vestibulum eu metus semper felis egestas elementum eget vel metus. Nulla lobortis, turpis ac cursus finibus, leo justo laoreet ipsum, ut consectetur dui diam et arcu. Ut id lacinia elit. Phasellus quis mauris mauris. Ut et blandit mauris, vel mattis tellus. Ut convallis et nisl et porttitor. Nam eu lacinia sem. Praesent faucibus, massa sed fringilla volutpat, nisl metus commodo arcu, vestibulum molestie felis nulla id felis. Maecenas et nisi lectus. Cras at iaculis tellus, at euismod lacus. Pellentesque congue vehicula metus eu tincidunt. Curabitur quis enim varius, vestibulum massa ac, faucibus turpis. Morbi dictum dui ante, at vestibulum nibh pretium ac. Nulla vitae arcu est. Proin sit amet sem vitae lorem fermentum sagittis ornare vel sem.</p>
+        <p>Integer at felis nisi. Nunc tincidunt sapien vitae tortor elementum consequat. Ut sit amet lectus enim. Donec malesuada velit non augue sodales, quis scelerisque mi euismod. Proin a purus id erat lacinia cursus. Aliquam gravida velit leo, eu molestie arcu blandit quis. Pellentesque consectetur nunc urna, id maximus metus iaculis eget. Nulla tincidunt dapibus purus vestibulum gravida. Donec sit amet nunc magna. Aenean et ex vitae augue hendrerit auctor ut tristique purus. Etiam ornare, leo vel condimentum vestibulum, mi lacus iaculis dolor, sed congue massa turpis gravida dui. Pellentesque sodales interdum neque, eu tincidunt sapien pulvinar a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentSection" style="background-image: url('Images/Cruising.jpg');">
+    <div class="transparentBox">
+      <div class="container content" id="todo">
+        <h1>Things to Do</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi lorem, laoreet vel mattis vel, condimentum vel turpis. In auctor varius tortor ut varius. Sed in risus ut diam suscipit elementum. Sed vehicula sodales dui, id consequat dui fringilla eget. Nullam vel pulvinar erat. In dignissim bibendum lacus, et convallis lacus rutrum in. Morbi faucibus a est vel posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel felis tristique, tristique orci eget, ornare massa.</p>
+        <p>Ut hendrerit elit in erat mollis commodo. Vestibulum eu metus semper felis egestas elementum eget vel metus. Nulla lobortis, turpis ac cursus finibus, leo justo laoreet ipsum, ut consectetur dui diam et arcu. Ut id lacinia elit. Phasellus quis mauris mauris. Ut et blandit mauris, vel mattis tellus. Ut convallis et nisl et porttitor. Nam eu lacinia sem. Praesent faucibus, massa sed fringilla volutpat, nisl metus commodo arcu, vestibulum molestie felis nulla id felis. Maecenas et nisi lectus. Cras at iaculis tellus, at euismod lacus. Pellentesque congue vehicula metus eu tincidunt. Curabitur quis enim varius, vestibulum massa ac, faucibus turpis. Morbi dictum dui ante, at vestibulum nibh pretium ac. Nulla vitae arcu est. Proin sit amet sem vitae lorem fermentum sagittis ornare vel sem.</p>
+        <p>Integer at felis nisi. Nunc tincidunt sapien vitae tortor elementum consequat. Ut sit amet lectus enim. Donec malesuada velit non augue sodales, quis scelerisque mi euismod. Proin a purus id erat lacinia cursus. Aliquam gravida velit leo, eu molestie arcu blandit quis. Pellentesque consectetur nunc urna, id maximus metus iaculis eget. Nulla tincidunt dapibus purus vestibulum gravida. Donec sit amet nunc magna. Aenean et ex vitae augue hendrerit auctor ut tristique purus. Etiam ornare, leo vel condimentum vestibulum, mi lacus iaculis dolor, sed congue massa turpis gravida dui. Pellentesque sodales interdum neque, eu tincidunt sapien pulvinar a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentSection" style="background-image: url('Images/SanDiego.jpg');">
+    <div class="transparentBox">
+      <div class="container content" id="registry" style="border-bottom: 0px;">
+        <h1>Our Wedding Registries</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi lorem, laoreet vel mattis vel, condimentum vel turpis. In auctor varius tortor ut varius. Sed in risus ut diam suscipit elementum. Sed vehicula sodales dui, id consequat dui fringilla eget. Nullam vel pulvinar erat. In dignissim bibendum lacus, et convallis lacus rutrum in. Morbi faucibus a est vel posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vel felis tristique, tristique orci eget, ornare massa.</p>
+        <p>Ut hendrerit elit in erat mollis commodo. Vestibulum eu metus semper felis egestas elementum eget vel metus. Nulla lobortis, turpis ac cursus finibus, leo justo laoreet ipsum, ut consectetur dui diam et arcu. Ut id lacinia elit. Phasellus quis mauris mauris. Ut et blandit mauris, vel mattis tellus. Ut convallis et nisl et porttitor. Nam eu lacinia sem. Praesent faucibus, massa sed fringilla volutpat, nisl metus commodo arcu, vestibulum molestie felis nulla id felis. Maecenas et nisi lectus. Cras at iaculis tellus, at euismod lacus. Pellentesque congue vehicula metus eu tincidunt. Curabitur quis enim varius, vestibulum massa ac, faucibus turpis. Morbi dictum dui ante, at vestibulum nibh pretium ac. Nulla vitae arcu est. Proin sit amet sem vitae lorem fermentum sagittis ornare vel sem.</p>
+        <p>Integer at felis nisi. Nunc tincidunt sapien vitae tortor elementum consequat. Ut sit amet lectus enim. Donec malesuada velit non augue sodales, quis scelerisque mi euismod. Proin a purus id erat lacinia cursus. Aliquam gravida velit leo, eu molestie arcu blandit quis. Pellentesque consectetur nunc urna, id maximus metus iaculis eget. Nulla tincidunt dapibus purus vestibulum gravida. Donec sit amet nunc magna. Aenean et ex vitae augue hendrerit auctor ut tristique purus. Etiam ornare, leo vel condimentum vestibulum, mi lacus iaculis dolor, sed congue massa turpis gravida dui. Pellentesque sodales interdum neque, eu tincidunt sapien pulvinar a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="rsvpModal" aria-hidden="true" style="color: black;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">RSVP for our wedding!</h4>
+        </div>
+        <div class="modal-body">
+          <p>Guest 1:</p>
+          <input type="text" class="form-control" id="rsvpName" value="" placeholder="Your name" />
+          <div class="btn-group" data-toggle="buttons" style="margin-top: 5px;">
+            <label class="btn btn-default">
+              <input type="radio" name="rsvpFood" id="rsvpFoodChicken" autocomplete="off" value="Chicken">Chicken
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="rsvpFood" id="rsvpFoodSteak" autocomplete="off" value="Steak">Steak
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="rsvpFood" id="rsvpFoodFish" autocomplete="off" value="Fish">Fish
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="postRsvp();">Submit Your RSVP</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script>
+    function postRsvp() {
+      var name = $('#rsvpName').val();
+      var food = $('input[name="rsvpFood"]:checked').val();
+      $.ajax({
+        url: "https://docs.google.com/forms/d/1wj5of3YhBTdBlWJyYMXlelWs2lCwQwBgwJGkWOzaGlw/formResponse",
+        data: { "entry_797248972": name, "entry_290247906": food },
+        type: "POST",
+        statusCode: {
+          200: function () {
+            $('#rsvpModal').modal('hide');
+          }
+        }
+      });
+    }
+  </script>
 </body>
 </html>
