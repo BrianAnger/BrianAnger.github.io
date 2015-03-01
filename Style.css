@@ -48,17 +48,17 @@ p {
 }
 
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
-  border-color: coral;
+  border-color: rgb(241, 168, 168);
 }
 
   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: coral;
+    background-color: rgb(241, 168, 168);
   }
 
 .navbar-default, .navbar-header {
   font-size: large;
   background-color: rgba(150, 251, 241, 0.95);
-  border-color: coral;
+  border-color: rgb(241, 168, 168);
 }
 
 .transparentBox {
